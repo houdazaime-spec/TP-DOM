@@ -56,31 +56,28 @@
     <p>Top Product: Gadget XYZ</p>
     <p>Units Sold: 500</p>
   </section>
+<!-- ====== FORMULAIRE POUR METTRE À JOUR LES INFORMATIONS ====== -->
+<form id="employeeForm">
+  <h2>Update Employee Information</h2>
 
-  <!-- ====== FORMULAIRE POUR METTRE À JOUR LES INFORMATIONS ====== -->
-  <section id="employeeForm">
-    <h2>Update Employee Information</h2>
+  <label for="nameInput">Name:</label>
+  <input type="text" id="nameInput" value="Alain"><br><br>
 
-    <!-- Champ de texte -->
-    <label for="nameInput">Name:</label>
-    <input type="text" id="nameInput" value="Alain"><br><br>
+  <label for="departmentSelect">Department:</label>
+  <select id="departmentSelect">
+    <option value="sales">Sales</option>
+    <option value="marketing">Marketing</option>
+    <option value="development">Development</option>
+  </select><br><br>
 
-    <!-- Menu déroulant -->
-    <label for="departmentSelect">Department:</label>
-    <select id="departmentSelect">
-      <option value="sales">Sales</option>
-      <option value="marketing">Marketing</option>
-      <option value="development">Development</option>
-    </select><br><br>
+  <p>Status:</p>
+  <label><input type="radio" name="status" value="active" checked> Active</label>
+  <label><input type="radio" name="status" value="inactive"> Inactive</label><br><br>
 
-    <!-- Boutons radio pour le statut -->
-    <p>Status:</p>
-    <label><input type="radio" name="status" value="active" checked> Active</label>
-    <label><input type="radio" name="status" value="inactive"> Inactive</label><br><br>
+  <button type="button" onclick="updatePage()">Update Information</button>
+  <button type="submit">Envoyer</button>
+</form>
 
-    <!-- Bouton pour exécuter le script JavaScript -->
-    <button onclick="updatePage()">Update Information</button>
-  </section>
 
   <!-- ====== PIED DE PAGE ====== -->
   <footer>© Company Name</footer>
